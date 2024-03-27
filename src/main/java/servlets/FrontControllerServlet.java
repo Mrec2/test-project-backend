@@ -2,20 +2,11 @@ package servlets;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.List;
-
-import com.google.gson.Gson;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import javaBeans.GestorPreguntasCss;
-import javaBeans.GestorPreguntasHTML;
-import javaBeans.GestorPreguntasJava;
-import javaBeans.GestorPreguntasJavascript;
-import javaBeans.PreguntaTest;
 
 
 @WebServlet("/testServlet/*")
@@ -25,10 +16,9 @@ public class FrontControllerServlet extends HttpServlet {
    
     public FrontControllerServlet() {
         super();
-        
     }
 
-	
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Estamos en el servlet GET");
@@ -75,15 +65,15 @@ public class FrontControllerServlet extends HttpServlet {
                 break;
             case "html":
             	System.out.println("entra en el dispatcher de html");
-                request.getRequestDispatcher("/preguntasHtmlServlet").forward(request, response);
+                request.getRequestDispatcher("/PreguntasHtmlServlet").forward(request, response);
                 break;
             case "js":
             	System.out.println("entra en el dispatcher de js");
-                request.getRequestDispatcher("/preguntasJsServlet").forward(request, response);
+                request.getRequestDispatcher("/PreguntasJsServlet").forward(request, response);
                 break;
             case "java":
             	System.out.println("entra en el dispatcher de java");
-                request.getRequestDispatcher("/preguntasJavaServlet").forward(request, response);
+                request.getRequestDispatcher("/PreguntasJavaServlet").forward(request, response);
                 break;
             default:
                 response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
