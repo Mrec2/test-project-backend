@@ -19,9 +19,9 @@ This exciting project is the result of collaboration among several peers from th
   - Java with MVC design pattern and DAO or Hibernate
 
 ## Authors
-- [@jumair](link-to-your-GitHub-profile) - BackEnd Developer
-- [@Mrec2](link-to-your-GitHub-profile) - FullStack Developer
-- [@Cochises](link-to-your-GitHub-profile) - FrontEnd Developer
+- [@Mrec2](https://github.com/Mrec2) - FullStack Developer
+- [@Cochises](https://github.com/Cochises) - FrontEnd Developer
+- [@jumair](https://github.com/jumair) - BackEnd Developer
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
