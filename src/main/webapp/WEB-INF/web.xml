@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>RespuestasFrontController</display-name>
+    <servlet-name>RespuestasFrontController</servlet-name>
+    <servlet-class>controllers.RespuestasFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RespuestasFrontController</servlet-name>
+    <url-pattern>/RespuestasFrontController</url-pattern>
+  </servlet-mapping>
 </web-app>
